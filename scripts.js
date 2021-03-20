@@ -46,6 +46,14 @@ $(document).ready(function() {
         convo5: `I see! Thanks for the help. I'll make sure to save you a slice!`
     };
 
+    // Character images
+    const charaImg = {
+        img01: `<img src="./assets/char_01.png" alt="Picture of the character.">`,
+        img02: `<img src="./assets/char_02.png" alt="Picture of the character.">`,
+        img03: `<img src="./assets/char_03.png" alt="Picture of the character.">`,
+        img04: `<img src="./assets/char_04.png" alt="Picture of the character.">`
+    }
+
 
     // Default visual settings
     $('.ynbutton, .restart, .leftArrow, .applesNeeded, .pies').css('visibility', 'hidden');
@@ -70,12 +78,12 @@ $(document).ready(function() {
             $('.ynbutton, .leftArrow').css('visibility', 'hidden');
             $('.rightArrow').css('visibility', '');
             $('.dialogueText').html(charaConvo.default);
-            $('.character').html(`<img src="./assets/char_01.png" alt="Picture of the character.">`);
+            $('.character').html(charaImg.img01);
         } else if (counter == 1) {
             $('.ynbutton').css('visibility', 'hidden');
             $('.leftArrow, .rightArrow').css('visibility', '');
             $('.dialogueText').html(charaConvo.convo0);
-            $('.character').html(`<img src="./assets/char_01.png" alt="Picture of the character.">`);
+            $('.character').html(charaImg.img01);
         };
     });
 
@@ -87,12 +95,12 @@ $(document).ready(function() {
         $('.dialogueText').html(charaConvo.convo3);
         $('.applesNeeded').html(generateApple);
         $('.pies').html(generatePie);
-        $('.character').html(`<img src="./assets/char_01.png" alt="Picture of the character.">`);
+        $('.character').html(charaImg.img01);
     });
 
     $('#n').on('click', function(){
         $('.dialogueText').html(charaConvo.convo2);
-        $('.character').html(`<img src="./assets/char_02.png" alt="Picture of the character.">`);
+        $('.character').html(charaImg.img02);
     });
 
 
@@ -104,7 +112,7 @@ $(document).ready(function() {
         $('.dialogueText').html(`Great! The receipe says that I need <span class="highlight">${rerollApple} apple(s)</span> to make one apple pie. I have to make <span class="highlight">${rerollPie} apple pie(s)</span> tonight so how many apples should I get?`);
         $('.applesNeeded').html(rerollApple);
         $('.pies').html(rerollPie);
-        $('.character').html(`<img src="./assets/char_01.png" alt="Picture of the character.">`);
+        $('.character').html(charaImg.img01);
     });
 
 
@@ -121,13 +129,13 @@ $(document).ready(function() {
     function checkAnswer() {
         if (answerApple == correct) {
             $('.dialogueText').html(charaConvo.convo5);
-            $('.character').html(`<img src="./assets/char_04.png" alt="Picture of the character.">`);
+            $('.character').html(charaImg.img04);
         } else if (answerApple == rerollCorrect) {
             $('.dialogueText').html(charaConvo.convo5);
-            $('.character').html(`<img src="./assets/char_04.png" alt="Picture of the character.">`);
+            $('.character').html(charaImg.img04);
         } else {
             $('.dialogueText').html(charaConvo.convo4);
-            $('.character').html(`<img src="./assets/char_03.png" alt="Picture of the character.">`);
+            $('.character').html(charaImg.img03);
         }
     }
 
