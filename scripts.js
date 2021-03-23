@@ -48,10 +48,10 @@ $(document).ready(function() {
 
     // Character images
     const charaImg = {
-        img01: `<img src="./assets/char_01.png" alt="Picture of the character.">`,
-        img02: `<img src="./assets/char_02.png" alt="Picture of the character.">`,
-        img03: `<img src="./assets/char_03.png" alt="Picture of the character.">`,
-        img04: `<img src="./assets/char_04.png" alt="Picture of the character.">`
+        img01: `<img src="./assets/char_01.png" alt="Picture of the character.Illustration of Exusiai looking confident.">`,
+        img02: `<img src="./assets/char_02.png" alt="Illustration of Exusiai looking hushed.">`,
+        img03: `<img src="./assets/char_03.png" alt="Illustration of Exusiai looking troubled.">`,
+        img04: `<img src="./assets/char_04.png" alt="Illustration of Exusiai looking happy.">`
     }
 
 
