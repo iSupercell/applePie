@@ -21,7 +21,6 @@ $(document).ready(function() {
     let answerApple;
     let rerollCorrect;
 
-
     // RNG and Math functions to use later
     const generateApple = Math.floor(Math.random() * 10) + 1;
     const generatePie = Math.floor(Math.random() * 10) + 1;
@@ -37,7 +36,7 @@ $(document).ready(function() {
 
     // Script for the dialogue box
     const charaConvo = {
-        default: `To get started, just click on the > arrow next to me!`,
+        default: `To get started, just click on the &#10095; arrow next to me!`,
         convo0: `Hey there! I need to buy enough apples to make some apple pie for tonight's party.`,
         convo1: `Can you help me find out how many apples I need to get?`,
         convo2: `Awww! Don't be like that. Help a friend out!`,
@@ -57,6 +56,7 @@ $(document).ready(function() {
 
     // Default visual settings
     $('.ynbutton, .restart, .leftArrow, .applesNeeded, .pies').css('visibility', 'hidden');
+    $("#answer:input").prop("disabled", true);
 
 
     // Code for the dialogue box toggle
@@ -96,6 +96,7 @@ $(document).ready(function() {
         $('.applesNeeded').html(generateApple);
         $('.pies').html(generatePie);
         $('.character').html(charaImg.img01);
+        $("#answer:input").prop("disabled", false);
     });
 
     $('#n').on('click', function(){
