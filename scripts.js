@@ -145,7 +145,7 @@ $(document).ready(function() {
         } else if (answerApple == rerollCorrect) {
             $('.dialogueText').html(charaConvo.convo5);
             $('.restart').css('visibility', '');
-            screen.matches ? $('.characterMobile').html(charaImgMobile.img02) : $('.character').html(charaImg.img02)
+            screen.matches ? $('.characterMobile').html(charaImgMobile.img04) : $('.character').html(charaImg.img04)
         } else {
             $('.dialogueText').html(charaConvo.convo4);
             screen.matches ? $('.characterMobile').html(charaImgMobile.img03) : $('.character').html(charaImg.img03)
