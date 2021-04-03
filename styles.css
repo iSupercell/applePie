@@ -57,6 +57,10 @@ footer p {
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
 
 /* ----------------------------------- */
 /* Main Content Code */
@@ -70,6 +74,11 @@ footer p {
 
 .character {
     width: 30%;
+}
+
+.characterMobile {
+    display: none;
+    margin: 30px 0 -95px 0;
 }
 
 
@@ -175,7 +184,7 @@ input {
 
 .restart {
     width: 150px;
-    margin-top: 30px;
+    margin: 30px 0 80px 0;
     padding: 15px 0;
 }
 
@@ -186,8 +195,8 @@ input {
 footer {
     background-color: black;
     text-align: center;
-    height: 38px;
-    padding-top: 10px;
+    height: 50px;
+    padding-top: 15px;
 }
 
 a {
@@ -244,5 +253,159 @@ a {
     .ynbutton button,
     .restart {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .flex {
+        width: 60%;
+    }
+    .dialogue {
+        width: 300px;
+    }
+    .ynbutton button,
+    .restart {
+        font-size: 0.8rem;
+    }
+    .equation {
+        font-size: 1.8rem;
+    }
+    .pies,
+    .applesNeeded {
+        font-size: 3rem;
+    }
+    .pieImg {
+        width: 80px;
+    }
+    .appleImg {
+        width: 50px;
+    }
+    .appleBtn {
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .charaName {
+        font-size: 1.2rem;
+    }
+    .character {
+        display: none;
+    }
+    .characterMobile {
+        display: block;
+    }
+    .flex {
+        width: 100%;
+    }
+    .frame {
+        width: 80%;
+    }
+    .dialogue {
+        width: 400px;
+    }
+    .equation {
+        font-size: 2.1rem;
+    }
+    .ynbutton button,
+    .restart {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .frame {
+        width: 95%;
+    }
+}
+
+@media (max-width: 580px) {
+    .frame {
+        width: 100%;
+    }
+    .dialogue {
+        width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    .dialogue {
+        height: 190px;
+    }
+    .toggle {
+        justify-content: center;
+        top: 200px;
+    }
+    .leftArrow,
+    .rightArrow {
+        margin: 0 20px;
+    }
+    .ynbutton button {
+        font-size: 0.8rem;
+        margin-top: 100px;
+    }
+    .equation {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    .pies,
+    .applesNeeded {
+        font-size: 2.6rem;
+    }
+    .pieImg {
+        width: 60px;
+    }
+    .appleImg {
+        width: 40px;
+    }
+    .appleBtn {
+        width: 60px;
+    }
+    input {
+        font-size: 1.5rem;
+        width: 80px;
+    }
+    .restart {
+        font-size: 0.8rem;
+        width: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .charaName {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 0.7rem;
+    }
+    .dialogue {
+        width: 280px;
+        height: 180px;
+    }
+    .toggle {
+        top: 190px;
+    }
+    .equation {
+        font-size: 1.3rem;
+    }
+    .pies,
+    .applesNeeded {
+        font-size: 1.8rem;
+    }
+    .pieImg {
+        width: 45px;
+    }
+    .appleImg {
+        width: 30px;
     }
 }

@@ -3,3 +3,4 @@ node_modules
 *.pdf
 *.zip
 *.code-workspace
+*.txt

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Pie!</title>
     
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/apple.ico" type="image/x-icon">
 
     <!-- Icon Kit HERE -->
     <script src="https://kit.fontawesome.com/6d162e65a0.js" crossorigin="anonymous"></script>
@@ -29,6 +29,12 @@
         <div class="wrapper">
             <div class="flex">
 
+                <!-- Code for Mobile character CG starts HERE -->
+                <div class="characterMobile">
+                    <img src="./assets/char_01m.png" alt="Illustration of Exusiai looking confident.">
+                </div>
+                <!-- Code for Mobile character CG ends HERE -->
+
                 <!-- Code for the dialogue frame starts HERE -->
                 <div class="frame">
                     <div class="toggle">
@@ -41,7 +47,7 @@
                     </div>
                     <div class="dialogue">
                         <p class="charaName">Exusiai</p>
-                        <p class="dialogueText">To get started, just click on the &#10095; arrow next to me!</p>
+                        <p class="dialogueText">To get started, just click on the &#10095; arrow next to this text box!</p>
                     </div>
                 </div>
                 
@@ -56,18 +62,18 @@
                 <div class="equation">
                     <p>
                         <!-- Pie number goes here -->
-                        <span class="pies">0</span>
-                        <img src="./assets/pie.png" alt="pie">
+                        <span class="pies">10</span>
+                        <img src="./assets/pie.png" alt="pie" class="pieImg">
 
                         <i aria-label="multiply" class="fas fa-times"></i>
 
                         <!-- Apple number goes here -->
-                        <span class="applesNeeded">0</span>
+                        <span class="applesNeeded">10</span>
 
                         <i aria-label="equal" class="fas fa-equals"></i>
 
                         <i aria-label="how many" class="fas fa-question"></i>
-                        <img src="./assets/apple.png" alt="apple">
+                        <img src="./assets/apple.png" alt="apple" class="appleImg">
                     </p>
                 </div>
                 <!-- Code for the equation frame ends HERE -->
@@ -78,7 +84,7 @@
                     <label class="sr-only" for="answer">Enter answer:</label>
                     <input type="text" maxlength="3" id="answer" name="answer" placeholder="0">
                     <button type="submit">
-                        <img src="./assets/apple2.png" alt="Click the apple image to submit answer." title="Submit Answer">
+                        <img src="./assets/apple2.png" alt="Click the apple image to submit answer." title="Submit Answer" class="appleBtn">
                     </button>
                 </form>
                 <button class="restart">reroll</button>
