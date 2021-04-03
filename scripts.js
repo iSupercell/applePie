@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 
     // Default visual settings
-    $('.ynbutton, .restart, .leftArrow, .applesNeeded, .pies').css('visibility', 'hidden');
+    // $('.ynbutton, .restart, .leftArrow, .applesNeeded, .pies').css('visibility', 'hidden');
     $("#answer:input").prop("disabled", true);
     $('[type="submit"]').prop('disabled', true);
 
@@ -70,10 +70,10 @@ $(document).ready(function() {
     $('.rightArrow').on('click', function(){
         counter++;
         if (counter == 1) {
-            $('.leftArrow').css('visibility', '');
+            $('.leftArrow').css('visibility', 'visible');
             $('.dialogueText').html(charaConvo.convo0);
         } else if (counter == 2) {
-            $('.ynbutton').css('visibility', '');
+            $('.ynbutton button').css('visibility', 'visible');
             $('.rightArrow').css('visibility', 'hidden');
             $('.dialogueText').html(charaConvo.convo1);
         };
@@ -82,13 +82,13 @@ $(document).ready(function() {
     $('.leftArrow').on('click', function(){
         counter--;
         if (counter == 0) {
-            $('.ynbutton, .leftArrow').css('visibility', 'hidden');
-            $('.rightArrow').css('visibility', '');
+            $('.ynbutton button, .leftArrow').css('visibility', 'hidden');
+            $('.rightArrow').css('visibility', 'visible');
             $('.dialogueText').html(charaConvo.default);
             screen.matches ? $('.characterMobile').html(charaImgMobile.img01) : $('.character').html(charaImg.img01)
         } else if (counter == 1) {
-            $('.ynbutton').css('visibility', 'hidden');
-            $('.leftArrow, .rightArrow').css('visibility', '');
+            $('.ynbutton button').css('visibility', 'hidden');
+            $('.leftArrow, .rightArrow').css('visibility', 'visible');
             $('.dialogueText').html(charaConvo.convo0);
             screen.matches ? $('.characterMobile').html(charaImgMobile.img01) : $('.character').html(charaImg.img01)
         };
@@ -97,9 +97,9 @@ $(document).ready(function() {
 
     // Code for YES or NO button
     $('#y').on('click', function(){
-        $('.ynbutton, .leftArrow').addClass('hide');
+        $('.ynbutton button, .leftArrow').addClass('hide');
         $('.equation').addClass('hidePseudo');
-        $('.applesNeeded, .pies').css('visibility', '');
+        $('.applesNeeded, .pies').css('visibility', 'visible');
         $('.applesNeeded').html(generateApple);
         $('.pies').html(generatePie);
         $('.dialogueText').html(charaConvo.convo3);
@@ -140,11 +140,11 @@ $(document).ready(function() {
     function checkAnswer() {
         if (answerApple == correct) {
             $('.dialogueText').html(charaConvo.convo5);
-            $('.restart').css('visibility', '');
+            $('.restart').css('visibility', 'visible');
             screen.matches ? $('.characterMobile').html(charaImgMobile.img04) : $('.character').html(charaImg.img04)
         } else if (answerApple == rerollCorrect) {
             $('.dialogueText').html(charaConvo.convo5);
-            $('.restart').css('visibility', '');
+            $('.restart').css('visibility', 'visible');
             screen.matches ? $('.characterMobile').html(charaImgMobile.img04) : $('.character').html(charaImg.img04)
         } else {
             $('.dialogueText').html(charaConvo.convo4);
