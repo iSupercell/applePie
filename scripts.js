@@ -61,7 +61,6 @@ $(document).ready(function() {
 
 
     // Default visual settings
-    // $('.ynbutton, .restart, .leftArrow, .applesNeeded, .pies').css('visibility', 'hidden');
     $("#answer:input").prop("disabled", true);
     $('[type="submit"]').prop('disabled', true);
 
