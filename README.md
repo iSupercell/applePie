@@ -20,6 +20,9 @@ I tried to create something that mimics the in-game dialogue mechanism. Unfortun
 NOTE: The input and submit button are disabled until the equation is generated to avoid errors.
 
 ## Disclaimer
-I do not own the character illustrations used in this app. All credit goes to her amazing artist: 幻象黑兔 twitter @ https://twitter.com/coneyrivard \
-Exusiai is also from a tower defense mobile game called Arknights. It's a great game and you should give it a shot. Yes, she does love apple pie. It's part of her lore. \
+I do not own the character illustrations used in this app. All credit goes to her amazing artist: 幻象黑兔 \
+Visit their twitter: https://twitter.com/coneyrivard and Pixiv: https://www.pixiv.net/en/users/4462245
+
+Exusiai is also from a tower defense mobile game called Arknights. It's a great game and you should give it a shot. \
+Yes, she does love apple pie very much. It's part of her lore! :relaxed: \
 Find out more about Arknights: https://www.arknights.global/
