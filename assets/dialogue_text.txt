@@ -1,6 +1,0 @@
-Exu0: Hey there! I need to buy enough apples to make some apple pie for tonight's party.
-Exu1: Can you help me find out how many apples I need to get?
-Exu2-no: Awww! Don't be like that. Help a friend out!
-Exu3-yes: Great! The receipe says that I need ___ apple(s) to make one apple pie. I have to make ___ apple pie(s) tonight so how many apples should I get?
-Exu4-wrong: Hmmm... Are you sure about that?
-Exu5-correct: I see! Thanks for the help. I'll make sure to save you a slice!

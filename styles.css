@@ -155,6 +155,26 @@ footer p {
     display: flex;
     font-size: 2.5rem;
     text-align: center;
+    position: relative;
+}
+
+.equation::after,
+.equation::before {
+    content: '';
+    display: block;
+    border-bottom: solid 3px rgb(255, 74, 74);
+    width: 50px;
+    position: absolute;
+    top: 140px;
+}
+
+.equation::before {
+    right: 180px;
+}
+
+.hidePseudo::after,
+.hidePseudo::before {
+    content: none;
 }
 
 .pies,
@@ -228,6 +248,14 @@ a {
     .equation {
         font-size: 2.1rem;
     }
+    .equation::after,
+    .equation::before {
+        width: 40px;
+        top: 130px;
+    }
+    .equation::before {
+        right: 155px;
+    }
     .pies,
     .applesNeeded {
         font-size: 3.3rem;
@@ -270,6 +298,14 @@ a {
     .equation {
         font-size: 1.8rem;
     }
+    .equation::after,
+    .equation::before {
+        width: 35px;
+        top: 110px;
+    }
+    .equation::before {
+        right: 135px;
+    }
     .pies,
     .applesNeeded {
         font-size: 3rem;
@@ -309,6 +345,14 @@ a {
     }
     .equation {
         font-size: 2.1rem;
+    }
+    .equation::after,
+    .equation::before {
+        width: 40px;
+        top: 115px;
+    }
+    .equation::before {
+        right: 150px;
     }
     .ynbutton button,
     .restart {
@@ -354,6 +398,14 @@ a {
         font-size: 1.5rem;
         margin-top: 30px;
     }
+    .equation::after,
+    .equation::before {
+        width: 30px;
+        top: 87px;
+    }
+    .equation::before {
+        right: 112px;
+    }
     .pies,
     .applesNeeded {
         font-size: 2.6rem;
@@ -397,6 +449,14 @@ a {
     }
     .equation {
         font-size: 1.3rem;
+    }
+    .equation::after,
+    .equation::before {
+        width: 25px;
+        top: 70px;
+    }
+    .equation::before {
+        right: 90px;
     }
     .pies,
     .applesNeeded {

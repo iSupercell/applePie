@@ -98,6 +98,7 @@ $(document).ready(function() {
     // Code for YES or NO button
     $('#y').on('click', function(){
         $('.ynbutton, .leftArrow').addClass('hide');
+        $('.equation').addClass('hidePseudo');
         $('.applesNeeded, .pies').css('visibility', '');
         $('.applesNeeded').html(generateApple);
         $('.pies').html(generatePie);
