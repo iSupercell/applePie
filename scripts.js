@@ -54,9 +54,9 @@ $(document).ready(function() {
 
     const charaImgMobile = {
         img01: `<img src="./assets/char_01m.png" alt="Illustration of Exusiai looking confident.">`,
-        img02: `<img src="./assets/char_02m.png" alt="Illustration of Exusiai looking confident.">`,
-        img03: `<img src="./assets/char_03m.png" alt="Illustration of Exusiai looking confident.">`,
-        img04: `<img src="./assets/char_04m.png" alt="Illustration of Exusiai looking confident.">`
+        img02: `<img src="./assets/char_02m.png" alt="Illustration of Exusiai looking hushed.">`,
+        img03: `<img src="./assets/char_03m.png" alt="Illustration of Exusiai looking troubled.">`,
+        img04: `<img src="./assets/char_04m.png" alt="Illustration of Exusiai looking happy.">`
     }
 
 
