@@ -16,9 +16,10 @@ I tried to create something that mimics the in-game dialogue mechanism. Unfortun
 10. The character's expression and dialogue will be changed accordingly.
 11. A reroll button will appear once user has answered correctly.
 12. User can then choose to reroll for a new equation.
+
 NOTE: The input and submit button are disabled until the equation is generated to avoid errors.
 
 ## Disclaimer
-I do not own the character illustrations used in this app. All credit goes to her amazing artist: 幻象黑兔 twitter @ https://twitter.com/coneyrivard
-Exusiai is also from a tower defense mobile game called Arknights. It's a great game and you should give it a shot. Yes, she does love apple pie. It's part of her lore.
+I do not own the character illustrations used in this app. All credit goes to her amazing artist: 幻象黑兔 twitter @ https://twitter.com/coneyrivard \
+Exusiai is also from a tower defense mobile game called Arknights. It's a great game and you should give it a shot. Yes, she does love apple pie. It's part of her lore. \
 Find out more about Arknights: https://www.arknights.global/
