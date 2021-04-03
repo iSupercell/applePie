@@ -33,13 +33,13 @@ $(document).ready(function() {
 
     function generateConvo(getApple, getPie){
         if (getApple === 1){
-            return `Great! The receipe says that I need <span class="highlight">${getApple} apple</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pies</span> tonight so how many apples should I get?`
+            return `Great! The recipe says that I need <span class="highlight">${getApple} apple</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pies</span> tonight so how many apples should I get?`
         } else if (getPie === 1){
-            return `Great! The receipe says that I need <span class="highlight">${getApple} apples</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pie</span> tonight so how many apples should I get?`
+            return `Great! The recipe says that I need <span class="highlight">${getApple} apples</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pie</span> tonight so how many apples should I get?`
         } else if (getApple && getPie === 1){
-            return `Great! The receipe says that I need <span class="highlight">${getApple} apple</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pie</span> tonight so how many apples should I get?`
+            return `Great! The recipe says that I need <span class="highlight">${getApple} apple</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pie</span> tonight so how many apples should I get?`
         } else {
-            return `Great! The receipe says that I need <span class="highlight">${getApple} apples</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pies</span> tonight so how many apples should I get?`
+            return `Great! The recipe says that I need <span class="highlight">${getApple} apples</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pies</span> tonight so how many apples should I get?`
         }
     }
 
