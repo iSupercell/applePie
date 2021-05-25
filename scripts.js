@@ -40,8 +40,8 @@ $(document).ready(function() {
             return `Great! The recipe says that I need <span class="highlight">${getApple} apple</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pie</span> tonight so how many apples should I get?`
         } else {
             return `Great! The recipe says that I need <span class="highlight">${getApple} apples</span> to make one apple pie. I have to make <span class="highlight">${getPie} apple pies</span> tonight so how many apples should I get?`
-        }
-    }
+        };
+    };
 
     
     // Character images
@@ -50,14 +50,14 @@ $(document).ready(function() {
         img02: `<img src="./assets/char_02.png" alt="Illustration of Exusiai looking hushed.">`,
         img03: `<img src="./assets/char_03.png" alt="Illustration of Exusiai looking troubled.">`,
         img04: `<img src="./assets/char_04.png" alt="Illustration of Exusiai looking happy.">`
-    }
+    };
 
     const charaImgMobile = {
         img01: `<img src="./assets/char_01m.png" alt="Illustration of Exusiai looking confident.">`,
         img02: `<img src="./assets/char_02m.png" alt="Illustration of Exusiai looking hushed.">`,
         img03: `<img src="./assets/char_03m.png" alt="Illustration of Exusiai looking troubled.">`,
         img04: `<img src="./assets/char_04m.png" alt="Illustration of Exusiai looking happy.">`
-    }
+    };
 
 
     // Default visual settings
@@ -148,7 +148,7 @@ $(document).ready(function() {
         } else {
             $('.dialogueText').html(charaConvo.convo4);
             screen.matches ? $('.characterMobile').html(charaImgMobile.img03) : $('.character').html(charaImg.img03)
-        }
-    }
+        };
+    };
 
 });
